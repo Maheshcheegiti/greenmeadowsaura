@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.section-p1 {
+    padding: 8px 80px;
+
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+body {
+    width: 100%;
+}
+
+/* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #437550;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #8afab5;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #8afab5;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #8afab5;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* home page */
+
+#about-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 73px;
+}
+
+#about-head:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-image: url('img/vishnulogo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10%;
+}
+#about-head h6 {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 380px;
+    position: relative;
+}
+
+#about-head img {
+    width: 30%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#about-head form {
+    padding-left: 40px;
+    position: relative;
+}
+
+#bannercl {
+    background-color: #437550;
+    height: 50px;
+}
+
+#login-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#login-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 30px 100px;
+    padding: 50px;
+    border: 20px solid #465b52;
+    width: 75%;
+    position: relative;
+}
+#login-details a{
+    position: relative;
+}
+#login-details button{
+    position:relative;
+}
+#login-details form {
+    width: 70%;
+
+}
+
+#login-details form input {
+    width: 100%;
+    padding: 12px 50px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #465b52;
+    position: relative;
+}
+
+#login-details form button{
+    background-color: #437550;
+    color: #fff;
+}
+
+#login-details form button:hover{
+    background-color: #8afab5;
+    color: #437550;
+}
+
+#bannercl {
+    padding-top: 6px;
+    position: relative;
+}
+
+#bannercl marquee {
+    padding: 10px 0px;
+}
+
+/* content css */
+#page-two {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#page-two:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-image: url('img/vishnulogo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10%;
+}
+
+#page-two a{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+#page-two h6 {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 220px;
+}
+
+#page-two div {
+    padding-left: 190px;
+}
+#navbar button{
+    background-color:#8afab5;
+    color: #437550;
+}
+#navbar button:hover{
+    background-color: #465b52;
+    color: #8afab5;
+}
+
+/* sports page */
+.button-name td{
+    border: 3px solid #000;
+    background-color: #437550;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #cefcdf;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+#sports-page .button-images{
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+#sports-page:before,#clubs-page:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    background-image: url('img/vishnulogo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10%;
+    z-index: -3;
+}
+#sports-page{
+    padding: 20px 250px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+#sports-page .button-name{
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 230px 190px;
+    position:absolute;
+    top: -15px;
+    left: 140px;
+    z-index: -1;
+}
+.button-images td{
+    width: 20%;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+.button-images td:hover{
+    background-color: #72e8845b;
+    z-index: -2;
+    transition: 0.5s;
+    border-radius: 60px;
+}
+
+/* clubs page */
+#clubs-page .button-images{
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+#clubs-page{
+    padding: 20px 250px;
+    position: relative;
+    height: 532px;
+}
+#clubs-page .button-name{
+    align-items: center;
+    border-spacing: 173px 190px;
+    position:absolute;
+    top: -10px;
+    left: 187px;
+    z-index: -1;
+}
+.maintenance{
+    height: 550px;
+    text-align: center;
+}
+.maintenance:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-image: url('img/vishnulogo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10%;
+    z-index: -1;
+}
+
+/* Badminton Page */
+#badminton{
+    display: flex;
+    height: 532px;
+}
+#b1 img{
+    height: 480px;
+}
+#b3{
+    padding-left: 20px; 
+}
+#b3 img{
+    height: 240px;
+    padding: 50px;
+}
+#b2{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+#badminton:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-image: url('img/vishnulogo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10%;
+    z-index: -1;
+}
+.breadcrumbs{
+    padding: 10px;
+    font-family: sans-serif;
+}
+.bc-item{
+    display: inline-block;
+}
+.bc-item:not(:last-of-type)::after{
+    content: '>';
+    margin: 0 5px;
+    color: #465b52;
+}
+.bc-link{
+    text-decoration: none;
+    color: #437550;
+}
+.bc-link:hover{
+    text-decoration: underline;
+}
+.bc-link-active{
+    font-weight: 500;
+    color: #000000;
+}
+
+button.applybutton{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    background-color:#437550;
+    text-align: center;
+    border: 1px solid #465b52;
+    color: #8afab5;
+}
+button.applybutton:hover{
+    background-color: #8afab5;
+    color: #437550;
+    transition: 0.9s;
+}
+
+@media (max-width:477px) {
+    .section-p1 {
+        padding: 20px 80px;
+    
+    }
+    
+    .section-m1 {
+        margin: 40px 0;
+    }
+    
+    button.normal {
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+
+    /* header */
+    #header img{
+        height: 25px;
+    }
+    #header {
+        padding: 10px 10px;
+    }
+    #navbar li {
+        padding: 0 8px;
+    }
+    
+    #navbar li a {
+        font-size: 9px;
+    }
+
+    
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        left: 10px;
+    }
+    
+    /* home page */
+    
+    #about-head {
+        flex-direction: column-reverse;
+    }
+    
+    #about-head:before {
+        background-position: 50% 45%;
+        background-size: 25%;
+    }
+    
+    #about-head h6 {
+        font-size: 20px;
+        padding-right: 50px;
+    }
+    
+    #about-head img {
+        width: 70%;
+    }
+    
+    #about-head div {
+        padding-left: 20%;
+        padding-right: 0px;
+        padding-top: 65px;
+    }
+    
+    #about-head form {
+        padding-left: 0px;
+    }
+    
+    #bannercl {
+        height: 27px;
+    }
+    
+    #login-details form h2 {
+        font-size: 20px;
+        line-height: 35px;
+        padding: 20px 0;
+    }
+    
+    #login-details {
+        margin: 10px 10px 10px 10px;
+        padding: 30px 150px;
+        border: 10px solid #465b52;
+        width: 75%;
+    }
+    #login-details form {
+        width: 100%;
+        padding-right:0px;
+        position: relative;
+        right: 80px;
+    }
+    
+    #login-details form input {
+        width: unset;
+        padding: 7px 0px;
+        margin-bottom: 20px;
+    }
+    #bannercl {
+        padding-top: 6px;
+        font-size: 10px;
+    }
+    
+    #bannercl marquee {
+        padding: 2px 0px;
+    }
+    
+}
